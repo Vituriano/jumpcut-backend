@@ -1,4 +1,4 @@
-FROM python:3.10.12
+FROM python:3.9.18
 
 WORKDIR /home
 RUN mkdir /home/api
@@ -38,4 +38,4 @@ RUN poetry install --no-root
 # Poetry installation
 EXPOSE 80
 
-CMD ["poetry", "run", "python", "-m", "uvicorn", "main:app", "--host", "0.0.0.0", "--port", "80"]
+# CMD ["poetry", "run", "python", "-m", "uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8080"]
