@@ -1,4 +1,4 @@
-FROM python:3.9.18
+FROM python:3.10.12
 
 WORKDIR /home
 RUN mkdir /home/api
