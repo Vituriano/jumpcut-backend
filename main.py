@@ -16,4 +16,4 @@ app.include_router(
 )
 
 if __name__ == '__main__':
-    uvicorn.run(app, host='localhost', port=80)
+    uvicorn.run(app, host='localhost', port=8080)
