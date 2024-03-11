@@ -10,6 +10,7 @@ WORKDIR /home/api
 RUN pip install poetry
 RUN pip install gunicorn
 RUN pip install uvicorn
+RUN pip install fastapi
 RUN poetry install --no-root
 # WORKDIR /home/root-user
 
