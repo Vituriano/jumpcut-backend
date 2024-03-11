@@ -2,5 +2,6 @@ build:
   docker:
     web: Dockerfile
 run:
-  web: gunicorn -k uvicorn.workers.UvicornWorker -c gunicorn_conf.py app.main:app
+  web: poetry run python -m uvicorn main:app --host 0.0.0.0 --port 8080
+
 
