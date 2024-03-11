@@ -8,7 +8,8 @@ ENV HOME /home
 COPY . /home/api
 WORKDIR /home/api
 RUN pip install poetry
-RUN sudo apt install gunicorn
+RUN pip install gunicorn
+RUN pip install unicorn
 RUN poetry install --no-root
 # WORKDIR /home/root-user
 
