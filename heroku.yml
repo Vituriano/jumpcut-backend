@@ -1,0 +1,5 @@
+build:
+  docker:
+    web: api/Dockerfile
+run:
+  web: docker run -p 8080:8080 d879904
