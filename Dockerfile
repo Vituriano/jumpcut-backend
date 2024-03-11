@@ -9,7 +9,7 @@ COPY . /home/api
 WORKDIR /home/api
 RUN pip install poetry
 RUN pip install gunicorn
-RUN pip install unicorn
+RUN pip install uvicorn
 RUN poetry install --no-root
 # WORKDIR /home/root-user
 
