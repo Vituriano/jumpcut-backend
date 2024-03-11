@@ -2,7 +2,5 @@ build:
   docker:
     web: Dockerfile
 run:
-  web: gunicorn -k uvicorn.workers.UvicornWorker main:app
-
-
-
+  web: poetry run python -m uvicorn main:app
+# gunicorn -k uvicorn.workers.UvicornWorker main:app
