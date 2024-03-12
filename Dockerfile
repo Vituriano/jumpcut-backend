@@ -2,7 +2,8 @@ FROM python:3.9.18
 
 WORKDIR /home
 RUN mkdir /home/api
-RUN apt update && apt upgrade -y && apt install -y ffmpeg
+# RUN apt update && apt upgrade -y && apt install -y ffmpeg
+RUN apt update && apt install -y ffmpeg
 
 ENV HOME /home
 COPY api /home/api
